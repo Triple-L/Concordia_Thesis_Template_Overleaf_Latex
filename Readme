@@ -2,3 +2,24 @@ Concordia thesis Latex template.
 
 I have researched many templates online, but no one works for overleaf with images.
 This version was finetuned by Lili Liu, which can be used on OVerleaf and include images in your thesis.
+
+
+
+
+Using the subfigure package:
+
+The subfigure package is long outdated, and will generate a 'Missing number' error when there is no error present. An example of this is shown below:
+
+% In your preamble
+\usepackage{subfigure}
+
+% In the body of your document
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[scale=0.2]{image}
+        \caption{A gull}
+        \label{fig:gull}
+    \end{subfigure}%
+\end{figure}
+This will generate an error, as the subfigure package does not recognise \textwidth as a number, when it is in fact a number (equivalent to the constant width of the total text block on a page). The way to resolve this is to use the more updated subcaption package, which has replaced subfigure. Writing the same code as above with \usepackage{subcaption} in the preamble instead of \usepackage{subfigure} will give the desired result without any error.

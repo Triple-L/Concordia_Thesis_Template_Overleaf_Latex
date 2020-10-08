@@ -6,6 +6,46 @@ This version was finetuned by Lili Liu, which can be used on OVerleaf and includ
 
 
 
+
+MUILTI IMAGES:
+
+\begin{figure}[h]
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{chapters/chapter4/Img/Figure_1.png}
+\caption{Caption1}
+\label{fig:subim1}
+\end{subfigure}
+
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{chapters/chapter4/Img/Figure_2.png}
+\caption{Caption 2}
+\label{fig:subim2}
+\end{subfigure}
+
+\begin{subfigure}{\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{chapters/chapter4/Img/Figure_3.png}
+\caption{Caption 2}
+\label{fig:subim2}
+\end{subfigure}
+
+
+\begin{subfigure}{\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{chapters/chapter4/Img/Figure_4.png}
+\caption{Caption 2}
+\label{fig:subim2}
+\end{subfigure}
+
+\caption{Line and  Curve ratio result of one sample.}
+\label{fig:image2}
+\end{figure}
+
+
+
+
+MISSING NUMBER TREATED AS ZERO PROBLEM: 
+
+
 Using the subfigure package:
 
 The subfigure package is long outdated, and will generate a 'Missing number' error when there is no error present. An example of this is shown below:
